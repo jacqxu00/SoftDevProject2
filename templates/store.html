@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="bar-left">
+  $$: {{cash}}
+</div>
+<div class="bar-right">
+  <a class="button hollow success" href="{{ url_for('home') }}">Back</a>
+</div>
+<div class="header">BUY ITEMS</div>
+<div class="store">
+  <form action=" {{ url_for('search') }}" method="POST">
+    <div class="input-group">
+      <input name="keyword" class="input-group-field" type="text">
+      <div class="input-group-button">
+	       <input type="submit" class="button" value="Search">
+      </div>
+    </div>
+  </form>
+  <div class="scrollarea">
+    <form method="POST" action="/buy">
+      <table>
+	      {% if condition == '1' %}
+          <td class="table-left">
+            <img height ="100" width = "100" src={{ret['image']}}>
+            {{ret['title']}}: ${{ret['price']}}
+          </td>
+          <td class="table-right">
+	          <input type="image" value={{ret['image']}} class="buy" src="../static/images/buy.png" name="buy">
+          </td>
+	      {% elif condition == '2' %}
+	        <p> Sorry, you don't have enough cash</p>
+	      {% elif condition == '3' %}
+	        <p> Sorry, you already bought this item before</p>
+	      {% endif %}
+      </table>
+    </form>
+  </div>
+</div>
+{% endblock %}

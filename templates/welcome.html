@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="left-half">
+  <form action="/login">
+    <input type="image" src="../static/images/watermelon.png" name="login" class="img">
+    <div class="frext">LOGIN</div>
+  </form>
+</div>
+<div class="right-half">
+  <form action="/register">
+    <input type="image" src="../static/images/dragonfruit.png" name="register" class="img">
+    <div class="frext">REGISTER</div>
+  </form>
+</div>
+{% endblock %}

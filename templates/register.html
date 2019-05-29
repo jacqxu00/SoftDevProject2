@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="register">
+  <form action=" {{ url_for('register_auth') }}" method="POST">
+    {% if condition == '1' %}
+    <p> Sorry, the passwords do not match. </p>
+    {% elif condition == '2' %}
+    <p> Sorry, the username already exists. </p>
+    {% endif %}
+    <p>USERNAME:</p>
+      <input name="usr" type="text">
+    <p>PASSWORD:</p>
+      <input name="pwd" type="password">
+    <p>CONFIRM PASSWORD:</p>
+      <input name="cfm" type="password">
+    <br>
+    <input type="submit" class="button expanded success" name="register" value="Register">
+  </form>
+</div>
+{% endblock %}

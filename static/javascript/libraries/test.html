@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+  <body>
+
+    </div>
+  </body>
+  <script>
+    var split = function(image) {
+        var width = image.width;
+        var height = image.height;
+        var canvas = document.createElement('canvas'),
+            ctx = canvas.getContext('2d');
+	
+	canvas.width = width;
+	canvas.height = height;
+	
+	ctx.drawImage(image, 0, 0, width, height,  0, 0, width, height);
+	var canvas2 = document.createElement('canvas2'),
+            ctx2 = canvas2.getContext('2d');
+	
+	canvas2.width = width;
+	canvas2.height = height;
+	
+	ctx2.drawImage(image, width/2 + 1, 0, width, height,  0, 0, width, height);
+	
+	return [canvas,canvas2];
+    pic = split("../images/pineapple/png");
+    lefthalf = pic[0];
+    righthalf = pic[1];
+    var  x = document.createElement("IMG");
+    x.setAttribute("src",lefthalf);
+    document.body.appendChild(x);
+    
+    
+  </script>

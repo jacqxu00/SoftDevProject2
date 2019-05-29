@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="login">
+  <form action="{{ url_for('login_auth') }}" method="POST">
+    {% if condition == '1' %}
+    <p> Sorry, incorrect username/password </p>
+    {% endif %}
+    <p>USERNAME:</p>
+    <input name="usr" type="text">
+    <p>PASSWORD:</p>
+    <input name="pwd" type="password">
+    <br>
+    <input type="submit" class="button expanded success" name="login" value="Login">
+  </form>
+</div>
+{% endblock %}

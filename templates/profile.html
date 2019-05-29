@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="bar-left">
+  $$: {{cash}}
+</div>
+<div class="bar-right">
+  <a class="button hollow success" href="{{ url_for('home') }}">Back</a>
+</div>
+<div class="header">SELECT ITEMS</div>
+<div class="store">
+  {% if condition == '1' %}
+    <p> Sorry, you can only use at most 8 items in one game</p>
+    {% elif condition == '2' %}
+    <p> Sorry, you need at least 1 item in one game </p>
+    {% endif %}
+  <div class="scrollarea">
+    <table>
+      {% for item in items %}
+      <tr id="thelist">
+	<td class="table-left"><img src=../static/images/{{item[1]}} style="height:50%;">  {{item[1]}}</td>
+	<td class="table-right">
+          {% if items[item] == 0 %}
+	  <form method="POST" action="{{ url_for('equip') }}">
+            <input type="image" class="onoff" src="../static/images/off.png" name="unequip" value={{item[1]}}>
+            {% else %}
+            <input type="image" class="onoff" src="../static/images/on.png" name="equip" value={{item[1]}}>
+            {% endif %}
+	</td>
+      </tr>
+      {% endfor %}
+    </table>
+    </form>
+  </div>
+</div>
+{% endblock %}

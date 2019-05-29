@@ -1,0 +1,47 @@
+
+{% extends "base.html" %}
+
+{% block body %}
+  <div class="bar-left">
+    $$: {{cash}}
+  </div>
+  <div class="bar-right">
+    <a class="button hollow success" href="{{ url_for('logout') }}">Logout</a>
+  </div>
+<div class="left-up-half">
+  <form action="/store" method="POST">
+    <input type="image" src="../static/images/kiwi.png" name="store" class="img">
+    <div class="frext">STORE</div>
+  </form>
+</div>
+<div class="left-down-half">
+  <form action="/profile" method="POST">
+    <input type="image" src="../static/images/grapple.png" name="profile" class="img">
+    <div class="frext">PROFILE</div>
+  </form>
+</div>
+{% if me > -1 %}
+<div class="new-score">
+  <h2>Your new score is:<br>{{me}}</h2>
+</div>
+{% endif %}
+<div class="middle">
+  <form action="/play" method="POST">
+    <input type="image" src="../static/images/mango.png" name="play" class="img">
+    <div class="frext">PLAY</div>
+  </form>
+</div>
+<div class="highscore">
+  <p style="line-height:110%;"><u>HIGH SCORES</u></p>
+  <div class="scrollarea">
+    <table>
+      {% for each in scores %}
+        <tr>
+          <td class="table-left">{{each[0]}}</td>
+          <td class="table-right">{{each[1]}}</td>
+        </tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>
+{% endblock %}

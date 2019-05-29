@@ -1,0 +1,149 @@
+xuJ —- 17-12-21 16:40
+	added pdf version of design doc
+	edited README.md to contain general description of game
+
+xuJ -- 17-12-26 19:20
+	started play.html and play.js
+	set up variables in play.js
+
+xuJ -- 17-12-27 01:23
+	set up the repo with the correct folders
+	started with background for the templates
+	NOTE: not sure how to center, and not sure how to transfer style to .css file yet
+
+xuJ -- 17-12-28 17:28
+	set up the base.html for the background image but the .css file is still not working
+
+WongE -- 17-12-28 17:50
+	moved javascript to a separate folder, tweaked css path in base.html
+
+WongE -- 2017-12-28 19:11:06
+	added main.py and a script to edit the devlog
+
+chenK -- 2017-12-29 19:15:48
+	added db
+
+WongE -- 2017-12-29 23:32:09
+	fixed typo
+
+WongE -- 2017-12-30 00:30:07
+	added auth functions in db.py
+
+xuJ -- 2017-12-30 17:38
+	started with rendering templates and redirecting
+
+WongE -- 2017-12-31 01:57:12
+	fixed tab error in db.py, imported stuff in main
+
+chenK -- 2017-12-31 15:21:55
+	Added item table and adding method
+
+chenK -- 2018-01-01 19:07:55
+	added helper functions to db
+
+chenK -- 2018-01-02 14:38:33
+	more functions in db
+
+xuJ -- 2018-01-02 14:44
+	filled out most of the templates except the stuff that displays data
+
+xuJ -- 2018-01-03 22:19:25
+	started formatting welcome.html, only problem is the inner div is not resizing properly
+
+chenK -- 2018-01-03 22:58:14
+	working on pause btn
+
+wongE -- 2018-01-04 21:31:50
+	added the class "entity"
+
+wongE -- 2018-01-04 22:20:15
+	implemented linked list class
+
+WongE -- 2018-01-05 14:50:34
+	bugfix
+
+xuJ -- 2018-01-06 10:20:12
+	added displays for the db data
+	formatted more forms and added css for the forms
+
+xuJ -- 2018-01-07 00:54:39
+	fixed css a little bit
+
+xuJ -- 2018-01-08 14:32:34
+	worked on css more, pages should be okay for now
+
+xuJ -- 2018-01-09 14:52:32
+	worked on css for home.html and store.html tables
+
+wuY -- 2018-01-10 14:33:40
+	fixed login
+
+wuY -- 2018-01-09 14:50:21
+  fixed register
+
+wuY -- 2018-01-10 14:33:40
+  fixed login
+
+xuJ -- 2018-01-10 14:52:39
+	fixed tables in store.html and profile.html
+
+WongE -- 2018-01-10 20:26:06
+	linked list bugfix, organized files
+
+xuJ -- 2018-01-10 21:47:29
+	formatted table left and table right
+	added the physics for image displacement
+
+wuY -- 2018-01-10 22:39:48
+  fixed back on profile
+	worked on store's buy function
+	worked on profile display
+
+WongE -- 2018-01-11 14:18:30
+	edited entityManager.js
+
+WongE -- 2018-01-11 17:54:27
+	finished entityManager, testing animations now
+
+WongE -- 2018-01-11 22:24:32
+	bugfixes and got animation to work
+
+xuJ -- 2018-01-16 14:40:29
+	added foundation but everything looks weird
+
+xuJ -- 2018-01-19 14:50:51
+	still fixing parts of foundation
+
+xuJ -- 2018-01-22 15:38:28
+	added in foundation and resizing of text and scrolling for the tables
+
+wuY -- 2018-01-22 21:54:09
+	finished with search method
+
+wuY -- 2018-01-22 22:57:28
+        fixed cash value on the page
+	working on displaying the search result using the api
+
+xuJ -- 2018-01-23 17:44:18
+	tweaked the properties of the item class so that they will move properly
+	also scaled it so it would work even after window size change
+
+WongE -- 2018-01-23 20:44:44
+	did a lot of stuff, but forgot to write to devlog
+
+wuY -- 2018-01-24 12:42:54
+  fixed profile using and not using items
+	fixed buying in store
+	fixed some db related methods
+
+xuJ -- 2018-01-24 00:12:18
+	added in buttons in play.html and added the form to bring score value into python
+
+wuY -- 2018-01-24 02:57:50
+  make profile(equip) more user friendly
+	fixed merge conflict in profile and equip
+
+xuJ -- 2018-01-24 03:45:23
+	put in actual data for highscore
+	display score in play.html
+	added README.md and DESIGN.pdf

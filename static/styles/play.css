@@ -1,0 +1,11 @@
+#portion1 {
+  width: 100px;
+  height: 100px;
+  background: url(my_Image.gif) 0 0;
+}
+
+#portion2 {
+  width: 100px;
+  height: 100px;
+  background: url(my_Image.gif) -91px 0;
+}
